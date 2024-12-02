@@ -293,8 +293,7 @@ def run__qunaught_prep_circuit(method_name, rounds, ell_q, eps_q, ell_p, eps_p, 
     # Create qumodes and qubits
     qmr = c2qa.QumodeRegister(num_qumodes=1, num_qubits_per_qumode=num_qubits_per_mode)
     qbr = qiskit.QuantumRegister(1)
-    cr = qiskit.ClassicalRegister(1) if method_name == 'BsB' else None
-    circuit = c2qa.CVCircuit(qmr, qbr, cr) if cr else c2qa.CVCircuit(qmr, qbr)
+    circuit = c2qa.CVCircuit(qmr, qbr) 
     
     # Apply sequences based on method
     if method_name == 'BsB':
