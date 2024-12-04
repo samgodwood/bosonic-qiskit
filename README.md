@@ -1,1 +1,1 @@
-This is a clone of the [Bosonic Qiskit repository](https://github.com/C2QA/bosonic-qiskit), created for personal experimentation.
+This is a clone of the [Bosonic Qiskit repository](https://github.com/C2QA/bosonic-qiskit), created for personal experimentation. All my own work is in the `Playground` directory.
