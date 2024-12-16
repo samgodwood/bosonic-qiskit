@@ -9,3 +9,5 @@ This directory my work playing around with hybrid oscillator-qubit architechture
 - **`Z2Higgs/`**: Investigates hybrid-oscillator hardware for simulating strongly interacting boson-fermion systems, with:
   - Motivation for the use of this hardware (`gate_complexity.ipynb`).
   - Trotterized dynamics of the Z2 Higgs lattice in 1+1D (`dynamics/`).
+
+- **`Rabi_Model/`**: Initial comparison of quantum simulations for a simple spin-boson Hamiltonian using all-qubit and oscillator-qubit architectures.
