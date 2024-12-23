@@ -10,6 +10,4 @@ This directory my work playing around with hybrid oscillator-qubit architechture
   - Motivation for the use of this hardware (`gate_complexity.ipynb`).
   - Trotterized dynamics of the Z2 Higgs lattice in 1+1D (`dynamics/`).
 
-- **`Rabi_Model/`**: Initial comparison of quantum simulations for a simple spin-boson Hamiltonian using all-qubit and oscillator-qubit architectures.
-
 - **`bosonic_operator_costs/`**: Initial comparisons of noisy bosonic operations, and the cost of implementing them on an all-qubit architectures.
