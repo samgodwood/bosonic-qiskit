@@ -99,7 +99,7 @@ def analyze_circuit(circuit, backend=GenericBackendV2(3)):
     }
 
 
-def simulate_system(hamiltonian, initial_state, num_modes, n_max, final_time=1):
+def simulate_system(hamiltonian, initial_state, num_modes, n_max, additional_qubits = 0, final_time=1):
     """
     Simulate the quantum system and analyze the circuit.
 
@@ -114,7 +114,7 @@ def simulate_system(hamiltonian, initial_state, num_modes, n_max, final_time=1):
         dict: Analysis results including gate counts, total depth, and Rz depth.
     """
     # Define system parameters
-    n_qubits = num_modes * int(np.ceil(np.log2(n_max + 1)))
+    n_qubits = num_modes * int(np.ceil(np.log2(n_max + 1))) + additional_qubits
     hamiltonian = convert_hamiltonian_to_pauli_string(hamiltonian)
     # Perform time evolution
     evolved_circuit = evolve_system(hamiltonian, initial_state, final_time)
