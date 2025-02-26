@@ -12,4 +12,4 @@ pylatexenc==2.10
 
 # tutorials/medium_artical/examples.ipynb not compatible with NumPy >2.0.0
 #   It causes type & casting validation errors in Qiskit Gate
-numpy<2.0.0
+numpy<2.0.0openfermion==1.6.1
